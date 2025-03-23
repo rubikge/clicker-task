@@ -26,7 +26,7 @@ export const Shop = () => {
   }
 
   return (
-    <div className="fixed top-4 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-lg p-4">
+    <div className="fixed top-4 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-lg p-4 z-10">
       <div className="flex gap-4">
         {availableBoosters.map(([boosterId, booster]) => {
           const cost = booster.costs[0];
