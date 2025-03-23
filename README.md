@@ -54,6 +54,11 @@ The project should now be running in development mode with hot-reload enabled.
 2. Implement clickable shop elements
 3. Add tooltips when hovering over shop items
 
+<details>
+<summary>Solution</summary>
+https://github.com/rubikge/clicker-task/compare/main...interface-improvements
+</details>
+
 ### Creative Development
 Choose one of the following development paths:
 
