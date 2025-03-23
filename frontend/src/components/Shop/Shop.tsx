@@ -35,7 +35,7 @@ export const Shop = () => {
             <div 
               key={boosterId}
               onClick={() => handlePurchase(boosterId as BoosterId)}
-              className="flex flex-col items-center aspect-square w-[120px] p-3 
+              className="group relative flex flex-col items-center aspect-square w-[120px] p-3 
                 border-2 border-gray-300 cursor-pointer
                 hover:border-blue-500 hover:shadow-lg
                 transition-all transform hover:scale-105 active:scale-95"
@@ -44,6 +44,14 @@ export const Shop = () => {
               <div className="font-bold text-sm text-center">{booster.name}</div>
               <div className="mt-auto text-xs font-medium text-blue-600">
                 {cost} clicks
+              </div>
+              
+              {/* Tooltip */}
+              <div className="opacity-0 group-hover:opacity-100 transition-opacity
+                absolute left-1/2 -translate-x-1/2 top-full mt-2 p-2
+                bg-gray-800 text-white text-xs rounded-lg w-48 text-center
+                whitespace-normal z-20">
+                {booster.description}
               </div>
             </div>
           );
